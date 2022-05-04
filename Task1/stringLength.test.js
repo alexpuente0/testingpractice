@@ -1,3 +1,4 @@
+const stringLength = require("./stringLength");
 const stringhLength = require("./stringLength");
 
 
@@ -15,11 +16,9 @@ test("helloworld to be 10", () => {
 }); 
 
 test("overtencharacters goes as expected", () => {
-  expect(() => compileAndroidCode()).toThrow();
-  expect(() => compileAndroidCode()).toThrow(Error);
+  expect(() => stringLength('overtencharacters')).toThrow(Error);
 })
 
 test("none goes as expected", () => {
-  expect(() => compileAndroidCode()).toThrow();
-  expect(() => compileAndroidCode()).toThrow(Error);
+  expect(() => stringLength('')).toThrow(Error);
 });
