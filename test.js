@@ -115,3 +115,25 @@ describe("divide", () => {
     expect(new calculator().divide(5167, 4825)).toBeCloseTo(1.07);
   });
 });
+
+// Task 4
+
+const capitalize = require("./capitalize.js");
+
+describe("Capitalizer", () => {
+  test("capital to be Capital", () => {
+    expect(capitalize("capital")).toEqual("Capital");
+  });
+
+  test("low to be Low", () => {
+    expect(capitalize("low")).toEqual("Low");
+  });
+
+  test("zz to be Zz", () => {
+    expect(capitalize("zz")).toEqual("Zz");
+  });
+
+  test("x to be X", () => {
+    expect(capitalize("x")).toEqual("X");
+  });
+});
